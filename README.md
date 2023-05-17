@@ -1,42 +1,32 @@
-# Nuxt 3 Minimal Starter
+# Coupon Wallet Evaluation
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+## Thoughts
 
-## Setup
+Coming from React, there was definetly some learning to be done. Having not yet touched Vue, I enjoyed the experience more than React. It seems more straightforward. At the least, this evaluation was a great introduction to Vue/Nuxt and something for me to expand on.
 
-Make sure to install the dependencies:
+I hadn't yet used Tailwind, I also thouroughly enjoyed that experience and it felt very clean.
 
-```bash
-# yarn
-yarn install
+I used Supabase to host a small backend that features user information and information pertaining to my fake businesses and coupons.
 
-# npm
-npm install
+I also used their storage to host some AI images I prompted on Midjourney for each business.
 
-# pnpm
-pnpm install
-```
+Redeeming coupons and removing connected businesses is a local action currently, it could be built into the database but I didn't want things deleted with no way to get it back when people view the site.
 
-## Development Server
+For the coupons I used QR codes, this is what the POS at my current job accepts. Barcodes or actual codes to type in are also viable, it's just what I went with for this example.
 
-Start the development server on `http://localhost:3000`
+## Credentials
 
-```bash
-npm run dev
-```
+My application currently has three accounts:
 
-## Production
+tiger@gmail.com
+Gr33nJ@cket
 
-Build the application for production:
+mj23@jumpman.air
+Car0linaBlue!
 
-```bash
-npm run build
-```
+roger.waters@gmail.com
+Pri$m123
 
-Locally preview production build:
+## Conclusion
 
-```bash
-npm run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+I like the direction this product went, it isn't exactly polished but I believe the concept is there and the user experience is manageable. I ran into some problems along the way, I wanted each coupon to match a color gradient by business but was having trouble attaching tailwinds bg-gradient classes from the database. There was also a weird bug where on the first load after login the wallet was messed up in different ways, to fix this I had to add a reload. Using fontawesome for the first time, there was also a duplicate element issue that had very limited resources online but I finall found some people with the same problem.
