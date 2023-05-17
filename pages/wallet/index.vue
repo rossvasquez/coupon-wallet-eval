@@ -179,7 +179,7 @@ import { ref } from 'vue';
   
   let fName = ref('');
 
-  let offerArr =ref([]);
+  let offerArr = ref([]);
 
   const walletTop = ref(null);
 
@@ -200,16 +200,11 @@ import { ref } from 'vue';
         hideBackdrop: false,
       });
     }
-    console.log(offerArr);
   });
 
   if (process.client && !localStorage.getItem('initial')){
-    location.reload();
     localStorage.setItem('initial', true);
-  }
-
-  if (process.client) {
-    localStorage.setItem('offers', offerArr.length);
+    location.reload();
   }
 
 </script>
