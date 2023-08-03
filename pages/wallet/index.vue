@@ -202,8 +202,7 @@ import { ref } from 'vue';
     }
   });
 
-  if (process.client && localStorage.getItem('initial') == false){
-    localStorage.setItem('initial', true);
+  if (process.client){
     location.reload();
   }
 
