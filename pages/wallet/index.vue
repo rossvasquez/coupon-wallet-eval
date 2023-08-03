@@ -205,8 +205,8 @@ import { ref } from 'vue';
   console.log(process.client && (localStorage.getItem('initial')===null || localStorage.getItem('initial')==='null'))
 
   if (process.client && (localStorage.getItem('initial')===null || localStorage.getItem('initial')==='null')){
-    location.reload();
     localStorage.setItem('initial', true)
+    window.location.replace(window.location.href);
   }
 
 </script>
