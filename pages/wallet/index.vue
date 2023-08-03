@@ -202,8 +202,9 @@ import { ref } from 'vue';
     }
   });
 
-  if (process.client){
+  if (process.client && localStorage.getItem('initial')===null){
     location.reload();
+    localStorage.setItem('initial', true)
   }
 
 </script>

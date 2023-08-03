@@ -68,6 +68,7 @@
                 if (error) {
                     
                 } else {
+                    localStorage.setItem('initial', null)
                     return router.push('/');
                 }
             }
